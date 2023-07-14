@@ -21,7 +21,7 @@ html::-webkit-scrollbar-track {
 
 /*================SECTION 01====================*/
 .sec01{
-    background-image: url('assets/images/banner-bg.avif');
+    background-image: url('../images/banner-bg.avif');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: bottom;
