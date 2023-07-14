@@ -225,3 +225,29 @@
         "retina_detect": !0
     });*/
 
+    VanillaTilt.init(document.querySelectorAll(".ng"), {
+        speed: 200,
+        glare: true
+    });
+
+    //It also supports NodeList
+    VanillaTilt.init(document.querySelectorAll(".ng"));
+
+    const carouselItems = document.querySelector('.carousel-items');
+const prevButton = document.querySelector('.carousel-prev');
+const nextButton = document.querySelector('.carousel-next');
+let currentIndex = 0;
+
+prevButton.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+    carouselItems.style.transform = `translateX(-${currentIndex * 100 / 2}%)`;
+  }
+});
+
+nextButton.addEventListener('click', () => {
+  if (currentIndex < 3) {
+    currentIndex++;
+    carouselItems.style.transform = `translateX(-${currentIndex * 100 / 2}%)`;
+  }
+});
