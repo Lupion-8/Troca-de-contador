@@ -1,0 +1,58 @@
+
+/*================Root===============*/
+:root{
+    --cor-primaria:#14206a;
+    --cor-white:#ffffff;
+}
+
+html::-webkit-scrollbar {
+    width: 1vw;
+}
+html::-webkit-scrollbar-thumb {
+    background-color: #0b0a66;
+    width: 1vw;
+}
+html::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+*{padding: 0px; margin: 0px; font-family: 'arial';}
+/*================FIM DO  ROOT===============*/
+
+
+/*================SECTION 01====================*/
+.sec01{
+    background-image: url('/assets/images/banner-bg.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    width: 100%;
+    height: 100vh;
+}
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+/*================ FIM SECTION 01===============*/
+
+
+/*================SECTION 02====================*/
+.sec0{
+    width: 100%;
+}
+.container02{
+    text-align: center;
+    width: 100%
+}
+
+
+
+footer{
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+
