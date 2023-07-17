@@ -1,1 +1,6 @@
 *{padding:0px; margin:0px}
+
+.container01 .vert01 .lay_text { 
+     max-width: 100%
+     color: var(--cor-white);
+ }
