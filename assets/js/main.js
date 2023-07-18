@@ -225,15 +225,9 @@
         "retina_detect": !0
     });*/
 
-    VanillaTilt.init(document.querySelectorAll(".ng"), {
-        speed: 200,
-        glare: true
-    });
 
-    //It also supports NodeList
-    VanillaTilt.init(document.querySelectorAll(".ng"));
 
-    const carouselItems = document.querySelector('.carousel-items');
+const carouselItems = document.querySelector('.carousel-items');
 const prevButton = document.querySelector('.carousel-prev');
 const nextButton = document.querySelector('.carousel-next');
 let currentIndex = 0;
@@ -241,13 +235,46 @@ let currentIndex = 0;
 prevButton.addEventListener('click', () => {
   if (currentIndex > 0) {
     currentIndex--;
-    carouselItems.style.transform = `translateX(-${currentIndex * 100 / 2}%)`;
+    carouselItems.style.transform = `translateX(-${currentIndex * 100 / 1.5}%)`;
   }
 });
 
 nextButton.addEventListener('click', () => {
   if (currentIndex < 3) {
     currentIndex++;
-    carouselItems.style.transform = `translateX(-${currentIndex * 100 / 2}%)`;
+    carouselItems.style.transform = `translateX(-${currentIndex * 100 / 1.5}%)`;
   }
 });
+
+
+function isMobileDevice() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
+  
+  if (isMobileDevice()) {
+    console.log('Olá dispositivo móvel.');
+  } else {
+    VanillaTilt.init(document.querySelectorAll(".ng"), {
+        speed: 200,
+        glare: true
+    });
+
+    //It also supports NodeList
+    VanillaTilt.init(document.querySelectorAll(".ng"));
+  }
+
+
+   //Acordeam
+   document.addEventListener("DOMContentLoaded", function() {
+    var accordionItems = document.getElementsByClassName("accordion-item");
+  
+    for (var i = 0; i < accordionItems.length; i++) {
+      var accordionHeader = accordionItems[i].querySelector(".accordion-header");
+      accordionHeader.addEventListener("click", toggleAccordion);
+    }
+  
+    function toggleAccordion(event) {
+      var accordionItem = this.parentNode;
+      accordionItem.classList.toggle("expanded");
+    }
+  });

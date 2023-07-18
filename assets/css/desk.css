@@ -20,12 +20,6 @@
     max-width: 90vw;
 }
 
-h1,
-h2,
-h3 {
-    margin-bottom: 2vw;
-}
-
 .container01 .vert02 {
     max-width: 100%;
 }
@@ -50,10 +44,7 @@ h3 {
     font-style: italic;
 }
 
-.actionBtn {
-    width: 100%;
-    text-align: center;
-}
+
 
 .action {
     padding: 0.5vw 1vw;
@@ -68,28 +59,11 @@ h3 {
     animation: pulseButton 2s infinite;
 }
 
-@keyframes pulseButton {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.2);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
 
 /*==================FIM SECTION 01====================*/
 
 
 /*====================SECTION 02====================*/
-.container02 .vert01 {
-    display: flex;
-    flex-direction: column;
-}
 
 .container02 .vert01 span:nth-child(1) {
     font-size: 2.5vw;
@@ -104,9 +78,7 @@ h3 {
     height: 18.6vw;
 }
 
-.container02 .vert02 {
-    margin: 1vw 6vw;
-}
+
 
 .infos {
     display: flex;
@@ -129,7 +101,7 @@ h3 {
 .paragraphe02 span {
     font-size: 2vw;
     text-align: end;
-    max-width: 43vw;
+    max-width: 47vw;
 }
 
 .paragraphe02 {
@@ -152,58 +124,28 @@ h3 {
     background-color: var(--cor-primaria);
     color: var(--cor-white);
     font-size: 2vw;
-}
-
-.destack {
-    animation: pulseDestak 2s infinite;
-}
-
-
-@keyframes pulseDestak {
-    10% {
-        color: black;
-    }
-
-    40% {
-        color: green;
-    }
-
-    100% {
-        color: black;
-    }
+    
 }
 
 /*==================FIM SECTION 02====================*/
 
 /*====================SECTION 03=====================*/
-.container03 {
-    padding: 0vw 6vw;
-    margin-top: 10vw;
-    text-align: center;
-}
 
-.container03 .vert01 {
-    display: flex;
-    flex-direction: column;
-}
 
 .vert01 span:nth-child(1) {
-    font-size: 2.5vw;
-    text-align: center;
-}
-
-.vert01 span:nth-child(2) {
     font-size: 3vw;
     text-align: center;
     font-weight: bolder;
 }
 
+
+
 .ngs {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
     margin: 3vw 3vw;
+    justify-content: center;
 }
 
 .container03 .vert02 .ngs .ng {
@@ -249,11 +191,6 @@ h3 {
 /*==================FIM SECTION 03==================*/
 
 /*====================SECTION 04=====================*/
-.container04 {
-    padding: 0vw 6vw;
-    margin-top: 10vw;
-    text-align: center;
-}
 
 .container04 .vert02 {
     margin-top: 5vw;
@@ -287,9 +224,6 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1vw;
-    border-radius: 0.5vw;
-    font-size: 1.2vw;
 }
 
 .carousel-prev,
@@ -302,14 +236,18 @@ h3 {
     border: none;
     cursor: pointer;
     transform: translateY(-50%);
+    font-size: 3vw;
+    color: rgb(20 32 106);
 }
 
 .carousel-prev {
     left: 8vw;
+    transform: rotate(90deg);
 }
 
 .carousel-next {
     right: 8vw;
+    transform: rotate(-90deg);
 }
 
 /*====================FIM SECTION 04=====================*/
@@ -318,12 +256,11 @@ h3 {
 /*======================SECTION 05======================*/
 
 .container05 .vert01 p {
-    margin-top: 1vw;
+    margin-top: 6vw;
+    font-size: 3vw;
 }
 
-.container05 .vert02 {
-    display: flex;
-}
+
 
 .container05 .vert02 .serv {
     width: 20vw;
@@ -334,12 +271,12 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: 1.3vw;
+    font-size: 1.43vw;
 }
 
 .container05 .vert02 .serv i {
     margin-bottom: 2vw;
+    font-size: 3vw;
 }
 
 .container05 .action {
@@ -353,6 +290,51 @@ h3 {
 /*======================FIM SECTION 05======================*/
 
 
-footer {
-    margin-top: 10vw;
+.contatoss {
+    margin: 4vw 4vw 12vw;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.contatoss >:nth-child(1) {
+    font-family: 'Arial';
+    font-weight: 600;
+    font-size: 2vw;
+    margin-bottom: 1vw;
+    color: white;
+}
+
+.contatoss >:nth-child(2) {
+    font-family: 'Arial';
+    font-weight: 600;
+    font-size: 1.3vw;
+    margin-bottom: 1vw;
+    color: white;
+}
+.textContato {
+    color: white;
+}
+
+.icoContato {
+    margin-right: 1vw;
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+}
+
+.sos {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.social {
+    display: flex;
+    color: white;
+}
+
+.carousel-item img{
+    width: 25vw;
+    border-radius: 1vw;
 }

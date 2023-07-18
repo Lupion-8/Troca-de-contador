@@ -1,6 +1,246 @@
-*{padding:0px; margin:0px}
+.container01 .vert01 img{
+    height: 100vw;
+    width: 100vw;
+    opacity: 0;
+}
 
-.container01 .vert01 .lay_text { 
-     max-width: 100%
-     color: var(--cor-white);
- }
+.container01 .vert02{
+    top: 0vw;
+    position: absolute;
+    margin-top: 8vw;
+    padding: 2vw;
+}
+
+.container01 .vert02 .lay_text h1{
+    font-size: 7vw;
+
+}
+
+.container01 .vert02 .lay_text h2{
+    font-size: 5vw;
+}
+
+.container01 .vert02 .lay_text h2{
+    font-size: 5vw;
+}
+
+.container01 .vert02 .lay_text h3 {
+    font-size: 4vw;
+}
+
+.container01 .vert02 .action {
+    margin-top: 5vw;
+    font-size: 4vw;
+    padding: 2vw;
+    border-radius: 1.3000000000000007vw;
+}
+
+.sec02 {
+    margin-top: -35vw;
+}
+
+.container02 .vert01 span:nth-child(1) {
+    font-size: 5vw;
+}
+
+.container02 .vert01 span:nth-child(2) {
+    font-size: 9vw;
+}
+
+.pass{
+    margin: 7vw 9vw;
+}
+
+.pass img{
+    width: 41.4vw;
+    height: 48.6vw;
+    margin: 0vw -8vw;
+}
+
+.infos span:nth-child(1) {
+    font-size: 5vw;
+    text-align: center;
+}
+
+.infos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infos img {
+    width: 50vw;
+    height: 49vw;
+}
+
+.paragraphe02{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vw;
+}
+
+
+.paragraphe02 img {
+    width: 50vw;
+    height: 49vw;
+}
+
+.container02 .action {
+    background-color: var(--cor-primaria);
+    color: var(--cor-white);
+    font-size: 5vw;
+    padding: 3vw 3vw;
+    border-radius: 1.3000000000000007vw;
+    outline: none;
+    border-style: none;
+    font-weight: bold;
+    cursor: pointer;
+    animation: pulseButton 2s infinite;
+}
+
+.vert01 span:nth-child(1) {
+    font-size: 5vw;
+    text-align: center;
+}
+.vert01 span:nth-child(2) {
+    font-size: 7vw;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.ngs{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 9vw 3vw;
+    align-items: center;
+}
+
+.container03 .vert02 .ngs .ng {
+    box-shadow: #00000075 0vw 0vw 7px;
+    border-radius: 3vw;
+    margin-bottom: 11vw;
+    padding: 7vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vw;
+}
+
+.container03 .vert02 .action {
+    background-color: var(--cor-primaria);
+    color: var(--cor-white);
+    font-size: 5vw;
+    padding: 2.5vw;
+    border-radius: 1.3000000000000007vw;
+    outline: none;
+    border-style: none;
+    font-weight: bold;
+    cursor: pointer;
+    animation: pulseButton 2s infinite;
+}
+
+.carousel {
+    width: 81vw;
+    height: 118vw;
+    overflow: auto;
+}
+
+.carousel-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-items {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    width: 200vw;
+    align-items: center;
+    height: 118vw;
+}
+
+.carousel-item {
+    flex: 0 0 calc(100% / 3);
+    box-shadow: #00000047 0vw 0vw 7px;
+    margin-right: 9vw;
+    margin-left: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3vw;
+    border-radius: 2.5vw;
+    font-size: 5vw;
+    text-align: center;
+    height: 100vw;
+}
+
+.carousel-prev, .carousel-next {
+    visibility: hidden;
+}
+
+.vert01 span:nth-child(1) {
+    font-size: 6vw;
+    text-align: center;
+}
+
+.container05 .vert01 p {
+    margin-top: 1vw;
+    font-size: 4vw;
+}
+
+.container05 .vert02 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container05 .vert02 .serv {
+    width: 20vw;
+    box-shadow: #00000075 0vw 0vw 7px;
+    border-radius: 1vw;
+    margin: 1vw;
+    padding: 7vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+}
+
+.container05 .vert02 .serv span{
+    margin: 2vw;
+}
+
+.container05 .action {
+    background-color: var(--cor-primaria);
+    color: var(--cor-white);
+    font-size: 5vw;
+    margin-top: 8vw;
+    padding: 3vw 1.5vw;
+    border-radius: 2vw;
+    outline: none;
+    border-style: none;
+    font-weight: bold;
+    cursor: pointer;
+    animation: pulseButton 2s infinite;
+}
+
+
+footer {
+    background-image: url(../images/banner-bg.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    color: var(--cor-white);
+    transform: rotate(180deg);
+}
