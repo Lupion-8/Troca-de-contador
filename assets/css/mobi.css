@@ -146,9 +146,10 @@
 }
 
 .carousel {
-    width: 81vw;
-    height: 118vw;
-    overflow: auto;
+    width: 100%;
+    overflow-x: scroll;
+    left: 1vw;
+    position: relative;
 }
 
 .carousel-wrapper {
@@ -163,22 +164,22 @@
     transition: transform 0.3s ease-in-out;
     width: 200vw;
     align-items: center;
-    height: 118vw;
+    /* height: 118vw; */
 }
 
 .carousel-item {
     flex: 0 0 calc(100% / 3);
-    box-shadow: #00000047 0vw 0vw 7px;
+    /* box-shadow: #00000047 0vw 0vw 7px; */
     margin-right: 9vw;
-    margin-left: 4vw;
+    margin-left: -2vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 3vw;
     border-radius: 2.5vw;
-    font-size: 5vw;
-    text-align: center;
-    height: 100vw;
+    /* font-size: 5vw; */
+    /* text-align: center; */
+    /* height: 100vw; */
 }
 
 .carousel-prev, .carousel-next {
@@ -202,7 +203,7 @@
 }
 
 .container05 .vert02 .serv {
-    width: 20vw;
+    width: 25vw;
     box-shadow: #00000075 0vw 0vw 7px;
     border-radius: 1vw;
     margin: 1vw;
@@ -232,15 +233,129 @@
     animation: pulseButton 2s infinite;
 }
 
+.carousel-item img {
+    width: 87vw;
+    height: 112.499vw;
+    border-radius: 2vw;
+    box-shadow: #00000047 0vw 0vw 7px;
+}
 
+.spp span {
+    font-size: 8vw;
+}
+
+.accordion {
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 15px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.container04 {
+    margin-top: 10vw;
+    text-align: center;
+    color: var(--cor-primaria);
+}
+
+.accordion {
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 0vw;
+}
+
+
+.containeContato {
+    margin: 3vw 7vw 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.team-content {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+}
+
+.text_contato1 {
+    margin: 0px;
+    font-size: 7vw;
+}
+
+.text_contato {
+    font-size: 5vw;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5vw;
+}
+
+.nameTelefone {
+    display: flex;
+    flex-direction: column;
+}
+
+.mail {
+    max-width: 100%;
+}
+
+.nn, .tt, .ee{
+    padding: 3.8000000000000007vw;
+    width: 90%;
+    background-color: #001930;
+    border-width: 0 0 0 0;
+    border-radius: 11vw;
+    margin-bottom: 1vw;
+    font-size: 5vw;
+    color: white;
+}
+
+.envi {
+    background-color: royalblue;
+    width: 100%;
+    outline: none;
+    border-radius: 10vw;
+    margin: auto;
+    border-style: none;
+    color: white;
+    padding: 4.8vw;
+    transition: 200ms;
+}
+.envi:hover {
+    background-color: #2B2C95;
+    color: #fff;
+    border-color: #fff;
+    cursor: pointer;
+}
+
+.contatoss {
+    margin: 14vw 4vw 39vw;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.iconRedes {
+    color: white;
+    font-size: 7vw;
+    margin: 1vw;
+}
 footer {
     background-image: url(../images/banner-bg.avif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: bottom;
     width: 100%;
-    height: 100vh;
+    height: 53vh;
     text-align: center;
     color: var(--cor-white);
     transform: rotate(180deg);
 }
+
