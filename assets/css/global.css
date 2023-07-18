@@ -15,7 +15,7 @@ html::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar-track {
     background: #ffffff;
 }
-*{padding: 0px; margin: 0px; font-family: 'arial'; scroll-behavior: smooth;}
+*{padding: 0px; margin: 0px; font-family: 'arial';}
 
 /*================FIM DO  ROOT===============*/
 
@@ -88,6 +88,16 @@ h3 {
 .actionBtn {
     width: 100%;
     text-align: center;
+}
+
+.container01 .action a{
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+
+.action a{
+    text-decoration: none;
+    color: var(--cor-white);
 }
 
 .container01 .vert02 .action {
