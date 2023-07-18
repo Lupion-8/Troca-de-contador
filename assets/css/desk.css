@@ -201,6 +201,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 3vw;
 }
 
 .carousel {
@@ -213,7 +214,7 @@
     display: flex;
     transition: transform 0.3s ease-in-out;
     padding: 0vw 3vw;
-    width: 50vw;
+    width: 57vw;
 }
 
 .carousel-item {
@@ -335,6 +336,6 @@
 }
 
 .carousel-item img{
-    width: 25vw;
+    width: 30vw;
     border-radius: 1vw;
 }

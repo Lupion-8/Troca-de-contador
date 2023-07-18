@@ -15,7 +15,8 @@ html::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar-track {
     background: #ffffff;
 }
-*{padding: 0px; margin: 0px; font-family: 'arial';}
+*{padding: 0px; margin: 0px; font-family: 'arial'; scroll-behavior: smooth;}
+
 /*================FIM DO  ROOT===============*/
 
 
@@ -100,6 +101,8 @@ h3 {
     font-size: 2vw;
     cursor: pointer;
     animation: pulseButton 2s infinite;
+    z-index: 10;
+    position: relative;
 }
 
 @keyframes pulseButton {
@@ -284,7 +287,7 @@ section.sec000 {
 
 
 .containeContato{
-    margin: 9vw 7vw 7vw;
+    margin: 3vw 7vw 7vw;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -359,8 +362,6 @@ section.sec000 {
     color: white;
 }
 
-
-
 .envi {
     background-color: royalblue;
     width: 100%;
@@ -371,4 +372,16 @@ section.sec000 {
     color: white;
     padding: 0.8vw;
     transition: 200ms;
+}
+
+.envi:hover {
+    background-color: #fff;
+    color: #2B2C95;
+    border-color: #fff;
+    cursor: pointer;
+}
+
+.spp{ text-align: center; margin-top: 10vw; font-style: italic; color: var(--cor-primaria);}
+.spp span{
+    font-size: 3vw;
 }
