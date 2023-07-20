@@ -278,11 +278,11 @@ section.sec000 {
     position: fixed;
     right: 1vw;
     bottom: 50px;
-    width: 52px;
+    width: 68px;
     height: 65px;
     background-image: url(https://controllerconsultores.com.br/trocadecontador/assets/images/wpp.webp);
     background-size: cover;
-    background-size: 50px;
+    background-size: 70px;
     background-repeat: no-repeat;
     text-align: center;
     z-index: 99;
@@ -293,7 +293,6 @@ section.sec000 {
     transition: all 0.3s ease-out 0s;
     display: none;
 }
-
 
 
 .containeContato{
