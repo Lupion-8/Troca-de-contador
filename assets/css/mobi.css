@@ -1,11 +1,23 @@
+.sec01 {
+    background-image: url(../images/banner-bg.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    width: 100%;
+    height: 163vh;
+    text-align: center;
+    color: var(--cor-white);
+}
+
 .container01 .vert01 img{
-    height: 100vw;
-    width: 100vw;
-    opacity: 0;
+    height: 90vw;
+    width: 90vw;
+    z-index: 5;
+    position: relative;
+    margin-top: 3vw;
 }
 
 .container01 .vert02{
-    top: 0vw;
     position: absolute;
     margin-top: 8vw;
     padding: 2vw;
@@ -36,11 +48,11 @@
 }
 
 .sec02 {
-    margin-top: -35vw;
+    margin-top: -71vw;
 }
 
 .container02 .vert01 span:nth-child(1) {
-    font-size: 5vw;
+    font-size: 7vw;
 }
 
 .container02 .vert01 span:nth-child(2) {
@@ -200,10 +212,12 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container05 .vert02 .serv {
-    width: 25vw;
+    width: 65vw;
     box-shadow: #00000075 0vw 0vw 7px;
     border-radius: 1vw;
     margin: 1vw;
@@ -213,6 +227,7 @@
     align-items: center;
     justify-content: center;
     font-size: 4vw;
+    font-weight: 700;
 }
 
 .container05 .vert02 .serv span{
