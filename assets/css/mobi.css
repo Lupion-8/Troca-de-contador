@@ -10,8 +10,7 @@
 }
 
 .container01 .vert01 img{
-    height: 90vw;
-    width: 90vw;
+    width: 80vw;
     z-index: 5;
     position: relative;
     margin-top: 3vw;
@@ -24,18 +23,18 @@
 }
 
 .container01 .vert02 .lay_text h1{
-    font-size: 7vw;
+    font-size: 5vw;
 
 }
 
 .container01 .vert02 .lay_text h2{
-    font-size: 5vw;
+    font-size: 4.445vw;
 }
 
-.container01 .vert02 .lay_text h2{
-    font-size: 5vw;
-}
 
+.particles {
+    height: 130vh;
+}
 .container01 .vert02 .lay_text h3 {
     font-size: 4vw;
 }
