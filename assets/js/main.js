@@ -166,6 +166,37 @@ document.addEventListener("DOMContentLoaded", function () {
             this.parentNode.querySelector('.accordion-icon').style.transform = 'rotate(180deg)';
         }
     }
+
+    //mascara
+    const telefoneInput = document.getElementById("telefone");
+
+    telefoneInput.addEventListener("input", function() {
+      const value = this.value.replace(/\D/g, ""); // Remove todos os caracteres que não são dígitos
+      const formattedValue = formatTelefone(value);
+      this.value = formattedValue;
+    });
+  
+    function formatTelefone(value) {
+      // Verifica o tamanho do número para aplicar a máscara correta
+      if (value.length <= 10) {
+        return value.replace(/^(\d{2})(\d{4})(\d{4})$/, "($1) $2-$3");
+      } else {
+        return value.replace(/^(\d{2})(\d{5})(\d{4})$/, "($1) $2-$3");
+      }
+    }
+
+
+    //redi
+    const formulario = document.querySelector(".inputs");
+
+    formulario.addEventListener("submit", function(event) {
+      event.preventDefault(); // Evita que o formulário seja enviado normalmente
+  
+      // Aqui você pode adicionar a lógica para processar os dados do formulário, se necessário
+  
+      // Redireciona para a página desejada após o envio do formulário
+      window.location.href = window.origin+'/thank.html';
+    });
 });
 
 
