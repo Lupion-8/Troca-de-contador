@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Aqui você pode adicionar a lógica para processar os dados do formulário, se necessário
   
       // Redireciona para a página desejada após o envio do formulário
-      window.location.href = window.origin+'/thank.html';
+      window.location.href = window.origin+'/trocadecontador/thank.html';
     });
 });
 
