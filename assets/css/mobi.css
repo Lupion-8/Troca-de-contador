@@ -1,3 +1,17 @@
+header{
+    background: var(--cor-white);
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.logo{
+    width: 25vw;
+}
+
 .sec01 {
     background-image: url(../images/banner-bg.avif);
     background-repeat: no-repeat;
@@ -7,6 +21,8 @@
     height: 163vh;
     text-align: center;
     color: var(--cor-white);
+    top: 12vw;
+    position: relative;
 }
 
 .container01 .vert01 img{
@@ -14,21 +30,25 @@
     z-index: 5;
     position: relative;
     margin-top: 3vw;
+    top: 21vw;
 }
 
 .container01 .vert02{
     position: absolute;
     margin-top: 8vw;
-    padding: 2vw;
+    padding: 2vw 9vw;
 }
 
 .container01 .vert02 .lay_text h1{
-    font-size: 5vw;
+    font-size: 4.7vw;
+    top: -95vw;
+    position: relative;
+    font-style: italic;
 
 }
 
 .container01 .vert02 .lay_text h2{
-    font-size: 4.445vw;
+    font-size: 4vw;
 }
 
 
@@ -37,6 +57,8 @@
 }
 .container01 .vert02 .lay_text h3 {
     font-size: 4vw;
+    top: 29vw;
+    position: relative;
 }
 
 .container01 .vert02 .action {
@@ -44,6 +66,7 @@
     font-size: 4vw;
     padding: 2vw;
     border-radius: 1.3000000000000007vw;
+    top: -12vw;
 }
 
 .sec02 {
@@ -83,6 +106,12 @@
 .infos img {
     width: 50vw;
     height: 49vw;
+    margin-top: 7vw;
+}
+
+
+.actionBtn {
+    position: relative;
 }
 
 .paragraphe02{
@@ -97,6 +126,7 @@
 .paragraphe02 img {
     width: 50vw;
     height: 49vw;
+    margin: 7vw 0vw;
 }
 
 .container02 .action {
@@ -131,6 +161,11 @@
     align-items: center;
 }
 
+.container03 .vert02 span {
+    font-weight: bold;
+    margin-bottom: 2vw;
+}
+
 .container03 .vert02 .ngs .ng {
     box-shadow: #00000075 0vw 0vw 7px;
     border-radius: 3vw;
@@ -141,6 +176,8 @@
     align-items: center;
     justify-content: center;
     font-size: 5vw;
+    background-color: var(--cor-primaria);
+    color: var(--cor-white);
 }
 
 .container03 .vert02 .action {
@@ -154,6 +191,7 @@
     font-weight: bold;
     cursor: pointer;
     animation: pulseButton 2s infinite;
+    margin-bottom: 4vw;
 }
 
 .carousel {
@@ -203,8 +241,9 @@
 }
 
 .container05 .vert01 p {
-    margin-top: 1vw;
+    margin-top: 10vw;
     font-size: 4vw;
+    margin-bottom: 5vw;
 }
 
 .container05 .vert02 {
@@ -227,10 +266,13 @@
     justify-content: center;
     font-size: 4vw;
     font-weight: 700;
+    background: var(--cor-primaria);
+    color: var(--cor-white);
 }
 
 .container05 .vert02 .serv span{
     margin: 2vw;
+    font-size: 3.4vw;
 }
 
 .container05 .action {
@@ -245,6 +287,7 @@
     font-weight: bold;
     cursor: pointer;
     animation: pulseButton 2s infinite;
+    width: 82%;
 }
 
 .carousel-item img {
@@ -361,15 +404,40 @@
     font-size: 7vw;
     margin: 1vw;
 }
+
 footer {
     background-image: url(../images/banner-bg.avif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: bottom;
     width: 100%;
-    height: 53vh;
+    height: 57vh;
     text-align: center;
     color: var(--cor-white);
     transform: rotate(180deg);
 }
 
+.contatoss >:nth-child(1) {
+
+    font-weight: 600;
+    margin-bottom: 1vw;
+    color: white;
+}
+
+.textContato{
+    margin: 1vw 0vw;
+    font-size: 3.5vw;
+}
+
+.contatoss >:nth-child(2) {
+    font-family: 'Arial';
+    font-weight: 600;
+    margin-bottom: 2vw;
+    color: white;
+}
+
+.icoContato {
+    margin-right: 1vw;
+    font-size: 5vw;
+    margin-bottom: 1vw;
+}

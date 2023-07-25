@@ -1,3 +1,18 @@
+header{
+    background: var(--cor-white);
+    padding: 1vw 0vw;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.logo{
+    width: 14vw;
+}
+
+
 /*================SECTION 01====================*/
 .container01 {
     display: flex;
@@ -26,6 +41,7 @@
 .vert02 .lay_text {
     text-align: center;
     color: var(--cor-white);
+    font-style: italic;
 }
 
 .vert02 .lay_text h1 {
@@ -34,7 +50,7 @@
 
 .vert02 .lay_text h2 {
     font-size: 1.5vw;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 .vert02 .lay_text h3 {
@@ -43,6 +59,10 @@
     font-style: italic;
 }
 
+
+.container01 .vert02 .lay_text h3 {
+    font-size: 1.5vw;
+}
 
 
 .action {
@@ -149,21 +169,24 @@
 
 .container03 .vert02 .ngs .ng {
     width: 20vw;
-    height: 20vw;
+    height: 18vw;
     box-shadow: #00000075 0vw 0vw 7px;
     border-radius: 1vw;
     margin: 1vw;
     padding: 1vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-size: 1.3vw;
+    background-color: var(--cor-primaria);
+    color: var(--cor-white);
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .container03 .vert02 span {
     font-weight: bold;
     margin-bottom: 1vw;
+    margin-top: 1vw;
     font-size: 1.5vw;
 }
 
@@ -273,6 +296,8 @@
     align-items: center;
     font-size: 1.43vw;
     transition: 1s;
+    background: var(--cor-primaria);
+    color: var(--cor-white);
 }
 
 .container05 .vert02 .serv i {
