@@ -170,32 +170,44 @@ document.addEventListener("DOMContentLoaded", function () {
     //mascara
     const telefoneInput = document.getElementById("telefone");
 
-    telefoneInput.addEventListener("input", function() {
-      const value = this.value.replace(/\D/g, ""); // Remove todos os caracteres que não são dígitos
-      const formattedValue = formatTelefone(value);
-      this.value = formattedValue;
+    telefoneInput.addEventListener("input", function () {
+        const value = this.value.replace(/\D/g, ""); // Remove todos os caracteres que não são dígitos
+        const formattedValue = formatTelefone(value);
+        this.value = formattedValue;
     });
-  
+
     function formatTelefone(value) {
-      // Verifica o tamanho do número para aplicar a máscara correta
-      if (value.length <= 10) {
-        return value.replace(/^(\d{2})(\d{4})(\d{4})$/, "($1) $2-$3");
-      } else {
-        return value.replace(/^(\d{2})(\d{5})(\d{4})$/, "($1) $2-$3");
-      }
+        // Verifica o tamanho do número para aplicar a máscara correta
+        if (value.length <= 10) {
+            return value.replace(/^(\d{2})(\d{4})(\d{4})$/, "($1) $2-$3");
+        } else {
+            return value.replace(/^(\d{2})(\d{5})(\d{4})$/, "($1) $2-$3");
+        }
     }
 
 
     //redi
     const formulario = document.querySelector(".inputs");
 
-    formulario.addEventListener("submit", function(event) {
-      event.preventDefault(); // Evita que o formulário seja enviado normalmente
-  
-      // Aqui você pode adicionar a lógica para processar os dados do formulário, se necessário
-  
-      // Redireciona para a página desejada após o envio do formulário
-      window.open(window.origin+'/trocadecontador/thank.html', '_blank');
+    formulario.addEventListener("submit", function (event) {
+        event.preventDefault(); // Evita que o formulário seja enviado normalmente
+        // Verifica se os campos obrigatórios estão preenchidos
+        if (formulario.checkValidity()) {
+            // Aqui você pode adicionar a lógica para processar os dados do formulário, se necessário
+
+            // Redireciona para a página desejada após o envio do formulário
+            const novaJanela = window.open(window.origin + '/trocadecontador/thank.html', '_blank');
+
+            // Verifica se a nova janela foi aberta com sucesso
+            if (novaJanela) {
+                document.querySelector('.inputs').innerHTML = '<span style="color: green;text-align: center;">Recebemos o seu Formulário.</span>';
+            } else {
+            console.log("Erro ao enviar o formulário.");
+            }
+        } else {
+            // Se os campos obrigatórios não estiverem preenchidos, exibe uma mensagem de erro
+            alert("Por favor, preencha todos os campos obrigatórios.");
+        }
     });
 });
 
